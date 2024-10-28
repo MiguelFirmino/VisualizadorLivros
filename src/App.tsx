@@ -11,8 +11,9 @@ function App() {
         <Link className="navbar-brand" to="/dados">Novo</Link>
       </nav>
       <Routes>
-        <Route path="/livrolista" element={<LivroLista />} /> {/* Raiz aponta para LivroLista */}
-        <Route path="/dados" element={<LivroDados />} /> {/* Rota para LivroDados */}
+        <Route path="/" element={<LivroLista />} /> {/* Raiz aponta para LivroLista */}
+        <Route path="/livrolista" element={<LivroLista />} /> 
+        <Route path="/dados" element={<LivroDados />} /> 
       </Routes>
     </Router>
   );
